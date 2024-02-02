@@ -135,6 +135,8 @@ body {
   font-size: 1.6rem;
 }
 
+/* header */
+
 .nav-wrapper {
   display: flex;
   justify-content: space-around;
@@ -166,5 +168,42 @@ nav button {
   border: 0px solid;
   border-radius: 1rem;
   color: white;
-  
+}
+
+/* main */
+
+.main-wrapper {
+  background: url(img/pattern-shapes.png);
+  background-blend-mode: multiply;
+  background-color: #0061f2;
+  text-align: center;
+}
+
+.main-h1 {
+  font-size: 3rem;
+  color: white;
+  padding-top: 10rem;
+}
+
+.main p {
+  padding-bottom: 5rem;
+}
+
+.main-button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-1 {
+  background-color: #00b993;
+  color: white;
+  border: 1px solid;
+  border-radius: 1rem;
+}
+
+.btn-2 {
+  background-color: white;
+  color: #00b993;
+  border: 1px solid;
+  border-radius: 1rem;
 }
