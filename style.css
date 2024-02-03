@@ -149,7 +149,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .menu-wrapper {
@@ -264,7 +265,7 @@ nav button:hover {
 .postings-h1 {
   font-size: 2rem;
   padding-bottom: 2rem;
-  margin-left: 5rem;
+  margin-left: 7rem;
 }
 #postings-h3 {
   margin-top: 2rem;
@@ -292,6 +293,8 @@ nav button:hover {
 
 .post-card {
   position: relative;
+  flex: 0 0 calc(25% - 2rem);
+  margin-top: 2REM;
 }
 .post-card:hover {
   transform: translateY(-10px);
@@ -364,6 +367,7 @@ nav button:hover {
 
 .city {
   margin-top: 8rem;
+  margin-bottom: 5rem;
 }
 .city-h1 {
   margin-left: 5rem;
@@ -490,6 +494,9 @@ footer {
   }
   .col-md-6 {
     width: 50%;
+  }
+  .post-card {
+    flex: auto;
   }
   .city-wrapper ul {
     flex:1 0 50%;
