@@ -294,7 +294,7 @@ nav button:hover {
 .post-card {
   position: relative;
   flex: 0 0 calc(25% - 2rem);
-  margin-top: 2REM;
+  margin-top: 2rem;
 }
 .post-card:hover {
   transform: translateY(-10px);
@@ -496,7 +496,7 @@ footer {
     width: 50%;
   }
   .post-card {
-    flex: auto;
+    flex: 0 0 calc(50% - 2rem);
   }
   .city-wrapper ul {
     flex:1 0 50%;
@@ -533,6 +533,10 @@ footer {
     display: block;
     text-align: left;
     margin-left: 0rem;
+  }
+  
+  .post-card {
+    flex: 0 0 calc(100% - 2rem);
   }
 }
 @media (max-width: 575.98px) {
