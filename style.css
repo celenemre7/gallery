@@ -384,6 +384,41 @@ nav button:hover {
   margin-right: 1rem;
 }
 
+
+/* app */
+
+.app {
+  background-color: #0061f2;
+  background: linear-gradient(to right, #0061f2, #6f3fdf);
+  transform: translate(#0061f2 to purple);
+  clip-path: ellipse(100% 90% at 50% 10%); ;
+  text-align: center;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+
+.app h1 {
+  font-size: 5rem;
+  color:white;
+}
+
+.app h2 {
+  color: gray;
+  padding-bottom: 2rem;
+}
+
+.app-btn {
+  background-color: black;
+  color: white;
+  padding: 1.8rem;
+  border: 0px ;
+  border-radius: 1rem ;
+} 
+.app p {
+  color: gray;
+  padding-top: 1rem;
+}
+
 @media (max-width: 1399.98px) {
   .categories-card {
     width: 27rem;
