@@ -253,7 +253,8 @@ nav button:hover {
   background-color: #009e7e;
 }
 
-/* cards */
+/* post
+ */
 
 .postings {
   background-color: #f2f6fc;
@@ -286,13 +287,13 @@ nav button:hover {
 .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
-.card {
+.post-card {
   position: relative;
 }
-.card:hover {
+.post-card:hover {
   transform: translateY(-10px);
 }
 
@@ -323,10 +324,52 @@ nav button:hover {
   width: 25%;
 }
 
+/* categories */
+.categories {
+  padding-top: 5rem;
+  background-color: #f2f6fc;
+}
+.categories h1 {
+  font-size: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.categories-card {
+  text-align: center;
+  background-color: white;
+  padding: 5rem;
+  border: 1px solid red;
+  border-bottom: 0.5rem solid red;
+  border-radius: 1rem;
+  width: 30rem;
+  margin-bottom: 5rem;
+}
+
+.categories-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+
+.categories i {
+  font-size: 3rem;
+  color: white;
+  padding: 2rem;
+  border-radius: 50%;
+  background-color: red;
+}
+
 @media (max-width: 1399.98px) {
+  .categories-card {
+    width: 27rem;
+  }
 }
 
 @media (max-width: 1199.98px) {
+  .categories-card {
+    width: 22rem;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -347,6 +390,9 @@ nav button:hover {
 @media (max-width: 767.98px) {
   .col-sm-12 {
     width: 100%;
+  }
+  .categories-card {
+    
   }
 }
 @media (max-width: 575.98px) {
