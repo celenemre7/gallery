@@ -288,7 +288,7 @@ nav button:hover {
 .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .post-card {
@@ -345,8 +345,8 @@ nav button:hover {
   border: 1px solid red;
   border-bottom: 0.5rem solid red;
   border-radius: 1rem;
-  width: 30rem;
   margin-bottom: 5rem;
+  flex: 0 0 calc(25% - 2rem);
 }
 
 .categories-card:hover {
@@ -471,18 +471,18 @@ footer {
 }
 
 @media (max-width: 1399.98px) {
-  .categories-card {
-    width: 27rem;
-  }
+  
 }
 
 @media (max-width: 1199.98px) {
-  .categories-card {
-    width: 22rem;
-  }
+
 }
 
 @media (max-width: 991.98px) {
+  .container {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
   .bar {
     display: block;
   }
@@ -503,6 +503,10 @@ footer {
     margin-right: 0rem;
   }
 
+  .categories-card {
+    flex: 0 0 calc(50% - 2rem);
+  }
+
   .footer-product {
     flex-wrap: wrap;
     margin-left: 5rem;
@@ -515,6 +519,10 @@ footer {
 }
 
 @media (max-width: 767.98px) {
+  .container {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
   .col-sm-12 {
     width: 100%;
   }
@@ -534,12 +542,21 @@ footer {
     text-align: left;
     margin-left: 0rem;
   }
+
+    .categories-card {  
+      flex: 0 0 calc(100% - 2rem);
+    }
+
   
   .post-card {
     flex: 0 0 calc(100% - 2rem);
   }
 }
 @media (max-width: 575.98px) {
+  .container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
   .main-button-wrapper {
     display: flex;
     flex-direction: column;
@@ -549,4 +566,5 @@ footer {
   .btn-2 {
     margin: 1rem;
   }
+
 }
